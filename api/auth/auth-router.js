@@ -27,7 +27,7 @@ const router = require('express').Router()
 
 
 
- router.post('/register', (rew,res,next) => {
+ router.post('/register', (req,res,next) => {
   res.json('register')
 })
  
@@ -45,7 +45,7 @@ const router = require('express').Router()
     "message": "Invalid credentials"
   }
  */
-router.post('/login', (rew,res,next) => {
+router.post('/login', (req,res,next) => {
   res.json('login')
 })
 
@@ -64,7 +64,7 @@ router.post('/login', (rew,res,next) => {
     "message": "no session"
   }
  */
-  router.post('/logout', (rew,res,next) => {
+  router.post('/logout', (req,res,next) => {
     res.json('logout')
   })
 
